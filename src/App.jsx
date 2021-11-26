@@ -7,9 +7,9 @@ class App extends Component {
     render () {
         return (
             <section>
-            <FormularioCadastro/>
-            <ListaDeNotas/>
-        </section>
+                <FormularioCadastro/>
+                <ListaDeNotas/>
+            </section>
         );
     }
 }
