@@ -4,7 +4,7 @@ import { ReactComponent as DeleteSVG } from "../../assets/images/delete.svg";
 class CardNota extends Component {
   apagarNota() {
     const index = this.props.index
-    this.props.deletarNota(index)
+    this.props.apagarNota(index)
   }
 
   render() {

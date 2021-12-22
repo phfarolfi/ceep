@@ -3,7 +3,7 @@ export default class Categorias {
         this.categorias = []
     }
 
-    adicionarCategoria(nome) {
+    criarCategoria(nome) {
         this.categorias.push(nome)
     }
 }

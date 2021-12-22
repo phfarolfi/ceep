@@ -1,11 +1,15 @@
-export default class Notas {
+export default class ArrayDeNotas {
     constructor() {
         this.notas = []
     }
 
-    adicionarNota(titulo, texto, categoria) {
+    criarNota(titulo, texto, categoria) {
         const novaNota = new Nota(titulo, texto, categoria)
         this.notas.push(novaNota)
+    }
+
+    apagarNota(index) {
+        this.notas.splice(index, 1)
     }
 }
 
