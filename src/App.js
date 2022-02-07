@@ -17,10 +17,10 @@ class App extends Component {
     render() {
         return (
             <section className="conteudo">
-                <FormularioCadastro categorias={this.categorias.categorias} criarNota={this.notas.criarNota}/>
+                <FormularioCadastro categorias={this.categorias} criarNota={this.notas.criarNota.bind(this.notas)}/>
                 <main className="conteudo-principal">
-                    <ListaDeCategorias categorias={this.categorias.categorias} criarCategoria={this.categorias.criarCategoria}/>
-                    <ListaDeNotas notas={this.notas.notas} apagarNota={this.apagarNota}/>
+                    <ListaDeCategorias categorias={this.categorias} criarCategoria={this.categorias.criarCategoria.bind(this.categorias)}/>
+                    <ListaDeNotas notas={this.notas} apagarNota={this.notas.apagarNota.bind(this.notas)}/>
                 </main>
             </section>
         );
